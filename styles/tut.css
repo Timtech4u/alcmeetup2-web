@@ -9,35 +9,24 @@
 html, body {
     margin: 0;
     height: 100vh;
-    background: blue;
+    background: teal ;
 }
 
-.container {
-    height: 100vh;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 20vh auto 10vh;
-    -ms-grid-columns: (1fr)[12];
-        grid-template: 20vh auto 10vh / repeat(12, 1fr);
-        grid-template-areas: 
-        "h h h h h h h h h h h h"
-        "m m m m m m m m m m m m"
-        "f f f f f f f f f f f f";
-}
+
 
 header {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-area: h;
-    background: #123456;
+    background: #3699a9;
     color: whitesmoke;
 }
 
 header > h1 {
     text-align: center;
     padding: 2vh;
-    font-family: 'Joti One', cursive;
+    font-family: "Segoe UI";
     font-size: 2.5rem;
 }
 
@@ -52,22 +41,14 @@ header > h1 {
 }
 
 h1:hover {
-    -webkit-transform: scale(0.9) rotate(250deg);
-        -ms-transform: scale(0.9) rotate(250deg);
-            transform: scale(0.9) rotate(250deg);
-    -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: -webkit-transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -o-transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background-color: white;
+    color: black;
 }
 
 main {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
+    
     grid-area: m;
-    background: #121aa6;
+    background: rgb(123,144,140);
     margin: auto;
     padding: 74px;
     text-align: center;
@@ -98,12 +79,21 @@ li:nth-child(1) {
 }
 
 li:nth-child(11) {
-    background: yellowgreen;
+    background: #76f8a3;
+    color: #f63823;
+}
+
+li:nth-child(12) {
+    background: #934976;
+    color: #f0f0f0;
 }
 
 li:nth-child(13) {
-    background: red;
+    background: lightblue;
+    color: #456657;
 }
+
+
 
 li:hover {
     opacity: 0.7;
@@ -122,115 +112,13 @@ footer {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-area: f;
-    background: #123456;
+    background: #678998;
     color: whitesmoke;
 }
 
 footer > p {
     text-align: center;
     padding: 2vh;
-    font-family: 'Joti One', cursive;
+    font-family: 'Segoe UI';
     font-size: 0.9rem;
-}
-
-@-webkit-keyframes beat {
-    0% {
-        color: red;
-        font-size: 20px;
-    }
-
-    25% {
-        color: orange;
-    }
-
-    50% {
-        color: yellow;
-        font-size: 40px;
-        -webkit-transform: scaleX(0.9);
-                transform: scaleX(0.9);
-    }
-
-    75% {
-        color: green;
-    }
-
-    100% {
-        color: blue;
-        font-size: 20px;
-    }
-}
-
-@keyframes beat {
-    0% {
-        color: red;
-        font-size: 20px;
-    }
-
-    25% {
-        color: orange;
-    }
-
-    50% {
-        color: yellow;
-        font-size: 40px;
-        -webkit-transform: scaleX(0.9);
-                transform: scaleX(0.9);
-    }
-
-    75% {
-        color: green;
-    }
-
-    100% {
-        color: blue;
-        font-size: 20px;
-    }
-}
-
-@-webkit-keyframes beat-icons {
-    0% {
-        color: red;
-        font-size: 20px;
-    }
-
-    25% {
-        color: orange;
-    }
-
-    50% {
-        color: yellow;
-    }
-
-    75% {
-        color: green;
-    }
-
-    100% {
-        color: blue;
-        font-size: 20px;
-    }
-}
-
-@keyframes beat-icons {
-    0% {
-        color: red;
-        font-size: 20px;
-    }
-
-    25% {
-        color: orange;
-    }
-
-    50% {
-        color: yellow;
-    }
-
-    75% {
-        color: green;
-    }
-
-    100% {
-        color: blue;
-        font-size: 20px;
-    }
 }
